@@ -112,3 +112,44 @@
     </div>
 </section>
 
+    <!-- Contact Me section starts here -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <!-- Contact form where users can fill in their details and comments -->
+            <form action="submit_form.php" method="post">
+                <!-- Name field -->
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <br>
+                
+                <!-- Email field with required validation -->
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <br>
+                
+                <!-- Phone field with required validation -->
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+                <br>
+                
+                <!-- Textarea for comments -->
+                <label for="comments">Comments:</label>
+                <textarea id="comments" name="comments"></textarea>
+                <br>
+                
+                <!-- Submit button -->
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer section starts here -->
+    <footer>
+        <div class="container">
+            <!-- Footer text with contact information and copyright -->
+            <p>&copy; 2024 Hiten Diwan. All rights reserved. <br>Email: hitendiwan92@gmail.com</p>
+        </div>
+    </footer>
+</body>
+</html>
