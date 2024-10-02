@@ -74,3 +74,140 @@ header nav ul li a:hover {
     padding: 60px 0;
     text-align: center;
 }
+
+/* ================= About Section ================== */
+#about img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+    border: 3px solid var(--cornell-red); /* Red border from palette */
+    width: 150px;
+    height: 150px;
+}
+
+#about p {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#about video {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+}
+
+/* ================= Projects Section ================== */
+#projects ul {
+    list-style-type: square;
+    margin: 0 auto;
+    padding: 0;
+    width: 60%;
+}
+
+#projects ul li {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+/* ================= Contact Form ================== */
+#contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#contact input, #contact textarea {
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid var(--rose-quartz); /* Border using Rose Quartz */
+    border-radius: 5px;
+}
+
+#contact input[type="submit"] {
+    background-color: var(--royal-blue-traditional); /* Primary color for button */
+    color: var(--pearl); /* Light text */
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+#contact input[type="submit"]:hover {
+    background-color: var(--moonstone); /* Lighter color on hover */
+}
+
+/* ================= Footer ================== */
+footer {
+    background: var(--royal-blue-traditional); /* Footer background using royal blue */
+    color: var(--pearl); /* Footer text color */
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* ====================== MEDIA QUERIES ====================== */
+
+/* Tablet Styles (768px - 1024px) */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .container {
+        width: 90%;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #about img {
+        width: 120px;
+        height: 120px;
+    }
+
+    #projects ul {
+        width: 80%;
+    }
+
+    #contact input, #contact textarea {
+        width: 100%;
+    }
+}
+
+/* Mobile Styles (max-width: 767px) */
+@media screen and (max-width: 767px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    header nav ul {
+        flex-direction: column;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+
+    #about img {
+        width: 100px;
+        height: 100px;
+    }
+
+    #projects ul {
+        width: 100%;
+    }
+
+    #contact input, #contact textarea {
+        width: 100%;
+    }
+}
