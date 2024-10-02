@@ -1,0 +1,29 @@
+/* ================= Color Palette (CSS Variables) ================== */
+
+/* CSS HEX */
+:root {
+    --royal-blue-traditional: #03256cff;
+    --moonstone: #58a4b0ff;
+    --rose-quartz: #a690a4ff;
+    --cornell-red: #bd1e1eff;
+    --pearl: #e6e1c5ff;
+}
+
+/* ================= General Styling ================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--royal-blue-traditional);
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px 0;
+}
