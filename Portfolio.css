@@ -27,3 +27,50 @@ body {
     margin: auto;
     padding: 20px 0;
 }
+
+h1, h2 {
+    color: var(--royal-blue-traditional); /* Heading color from palette */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ================= Header and Navigation ================== */
+header {
+    background: var(--royal-blue-traditional); /* Royal blue background */
+    color: var(--pearl); /* Light color for text */
+    padding: 10px 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+}
+
+header nav ul li a {
+    color: var(--pearl); /* Light color for navigation text */
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px 10px;
+}
+
+header nav ul li a:hover {
+    background: var(--moonstone); /* Hover effect with Moonstone color */
+    color: var(--royal-blue-traditional); /* Dark text on hover */
+    border-radius: 5px;
+}
+
+/* ================= Home Section with Gradient ================== */
+#home {
+    background: linear-gradient(135deg, var(--royal-blue-traditional), var(--moonstone), var(--rose-quartz), var(--cornell-red), var(--pearl)); /* Gradient using color palette */
+    color: var(--pearl); /* Light text */
+    padding: 60px 0;
+    text-align: center;
+}
